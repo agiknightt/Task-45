@@ -1,0 +1,13 @@
+E:\prj\Task-45\Task-45\bin\Debug\netcoreapp3.1\Task-45.exe
+E:\prj\Task-45\Task-45\bin\Debug\netcoreapp3.1\Task-45.deps.json
+E:\prj\Task-45\Task-45\bin\Debug\netcoreapp3.1\Task-45.runtimeconfig.json
+E:\prj\Task-45\Task-45\bin\Debug\netcoreapp3.1\Task-45.runtimeconfig.dev.json
+E:\prj\Task-45\Task-45\bin\Debug\netcoreapp3.1\Task-45.dll
+E:\prj\Task-45\Task-45\bin\Debug\netcoreapp3.1\Task-45.pdb
+E:\prj\Task-45\Task-45\obj\Debug\netcoreapp3.1\Task-45.csprojAssemblyReference.cache
+E:\prj\Task-45\Task-45\obj\Debug\netcoreapp3.1\Task-45.AssemblyInfoInputs.cache
+E:\prj\Task-45\Task-45\obj\Debug\netcoreapp3.1\Task-45.AssemblyInfo.cs
+E:\prj\Task-45\Task-45\obj\Debug\netcoreapp3.1\Task-45.csproj.CoreCompileInputs.cache
+E:\prj\Task-45\Task-45\obj\Debug\netcoreapp3.1\Task-45.dll
+E:\prj\Task-45\Task-45\obj\Debug\netcoreapp3.1\Task-45.pdb
+E:\prj\Task-45\Task-45\obj\Debug\netcoreapp3.1\Task-45.genruntimeconfig.cache
