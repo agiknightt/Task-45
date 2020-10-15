@@ -14,9 +14,7 @@ namespace Task_45
             AddTroopOne(troopOne);
             AddTroopTwo(troopTwo);
 
-            troopTwo = troopTwo.Union(troopOne.Where(fighter => fighter.Name.StartsWith("Б"))).ToList();
-
-            var intersect = troopOne.Intersect(troopTwo).ToList();
+            troopTwo = troopTwo.Union(troopOne.Where(fighter => fighter.Name.StartsWith("Б"))).ToList();            
 
             for (int i = 0; i < troopOne.Count; i++)
             {
