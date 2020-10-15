@@ -14,21 +14,15 @@ namespace Task_45
             AddTroopOne(troopOne);
             AddTroopTwo(troopTwo);
 
-            troopTwo = troopTwo.Union(troopOne.Where(fighter => fighter.Name.StartsWith("Б"))).ToList();            
+            var result = troopTwo.Union(troopOne.Where(fighter => fighter.Name.StartsWith("Б"))).ToList();
 
-            for (int i = 0; i < troopOne.Count; i++)
-            {
-                if (troopOne[i].Name.StartsWith("Б"))
-                {
-                    troopOne.RemoveAt(i);
-                }
-            }        
+            troopOne = troopOne.Except(result).ToList();
+            troopTwo = result;            
 
             foreach (var figther in troopTwo)
             {
                 Console.WriteLine($"имя бойца - {figther.Name}");
             }
-
             Console.ReadKey();
         }
 
