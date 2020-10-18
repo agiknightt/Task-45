@@ -14,31 +14,43 @@ namespace Task_45
             AddTroopOne(troopOne);
             AddTroopTwo(troopTwo);
 
-            var result = troopTwo.Union(troopOne.Where(fighter => fighter.Name.StartsWith("Б"))).ToList();
+            var result = troopOne.Where(fighter => fighter.Name.StartsWith("Б")).ToList();
+
+            troopTwo = troopTwo.Union(result).ToList();
 
             troopOne = troopOne.Except(result).ToList();
-            troopTwo = result;            
+
+            Console.WriteLine("Отряд один\n");
+
+            foreach (var figther in troopOne)
+            {
+                Console.WriteLine($"имя бойца - {figther.Name}");
+            }
+
+            Console.WriteLine("\nОтряд два\n");
 
             foreach (var figther in troopTwo)
             {
                 Console.WriteLine($"имя бойца - {figther.Name}");
-            }
+            }            
             Console.ReadKey();
         }
 
         private static void AddTroopOne(List<Fighter> troop)
         {
+            troop.Add(new Fighter("Андреев Андрей"));
             troop.Add(new Fighter("Бургузинов Антон"));
             troop.Add(new Fighter("Антонов Игорь"));
             troop.Add(new Fighter("Белов Андрей"));
             troop.Add(new Fighter("Греков Виталий"));
-            troop.Add(new Fighter("Васильев Василий"));
+            troop.Add(new Fighter("Васильев Василий"));            
         }
         private static void AddTroopTwo(List<Fighter> troop)
         {
+            troop.Add(new Fighter("Андреев Андрей"));
             troop.Add(new Fighter("Битонов Александр"));
             troop.Add(new Fighter("Болегов Николай"));
-            
+            troop.Add(new Fighter("Васильев Василий"));
         }
     }    
     class Fighter
